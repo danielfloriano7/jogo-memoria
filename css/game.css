@@ -1,14 +1,41 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding:  20px ;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1em;
+    width: 100%;
+    max-width: 760px;
+    padding: 30px;
+    margin: 0 0 20px;
+    border-radius: 5px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     width: 100%;
-    max-width: 800px;
-    margin: 100px auto;
+    max-width: 750px;
+    margin: 0 auto;
+    
 }
 
 .card {
     aspect-ratio: 3/4;
+    
     width: 100%;
     background-color: #70c636c2;
     border-radius: 5px;
@@ -44,5 +71,5 @@
 
 .disabled-card {
     filter: saturate(0);
-    opacity: 0.5;
+    opacity: 0.8;
 }

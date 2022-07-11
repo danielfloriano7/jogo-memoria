@@ -1,16 +1,50 @@
+body {
+ 
+    background-image: url('images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding:  20px ;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1em;
+    width: 100%;
+    max-width: 760px;
+    padding: 30px;
+    margin: 0 0 20px;
+    border-radius: 5px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     width: 100%;
-    max-width: 800px;
-    margin: 100px auto;
+    max-width: 750px;
+    margin: 0 auto;
+    
 }
 
 .card {
     aspect-ratio: 3/4;
+    
     width: 100%;
-    background-color: #ffffffc2;
+    background-color: #f4faff;
     border-radius: 5px;
     position: relative;
     transition: all 400ms ease;
@@ -24,7 +58,7 @@
     background-size: cover;
     background-position: center;
 
-    border: 2px solid #394081;
+    border: 2px solid #395281;
     border-radius: 5px;
 
     transition: 400ms all 600ms ease;
@@ -34,7 +68,7 @@
 }
 
 .back {
-    background-image: url('./images/carta.jpg');
+    background-image: url('images/carta.jpg');
     backface-visibility: hidden;
 }
 
@@ -43,6 +77,6 @@
 }
 
 .disabled-card {
-    filter: saturate(0);
-    opacity: 0.5;
+    filter: saturate(0.2);
+    opacity: 0.9;
 }
